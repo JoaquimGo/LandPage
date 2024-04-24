@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #bcd8d4; /* Cor de fundo cinza claro */
+    background: linear-gradient(to right, #e7e7e7e9, #8fdceae9); /* Cor de fundo cinza claro */
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 header {
-    background: #35050e; /* fundo do header topo */
+    background: #0cea0f48; /* fundo do header topo */
     color: #fff;
     padding: 415px;
 }
@@ -31,8 +31,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #eb2c2cfb;
+    textadaadecoration: none;
 }
 
 section {
@@ -81,4 +81,41 @@ footer {
 
 .imagem-produto:hover {
     opacity: 0.8; /* Diminua a opacidade ao passar o mouse */
+}
+containerVideo {
+    position: absolute; /* Define a posição absoluta */
+    top: 0; /* Alinha o topo com o topo do contêiner */
+    left: 0; /* Alinha a esquerda com a esquerda do contêiner */
+    min-width: 100%; /* Define a largura mínima como 100% */
+    min-height: 100%; /* Define a altura mínima como 100% */
+    width: auto; /* Define a largura automática */
+    height: auto; /* Define a altura automática */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    opacity: 50; /* Diminui a opacidade do vídeo para 50% */
+}
+/* Estilos para o conteúdo dentro de containerInicial */
+
+.contentInicial {
+    font-size: 24px; /* Aumenta o tamanho da fonte para 24 pixels */
+    color: #3f4443; /* Define a cor do texto como cinza escuro */
+    position: absolute; /* Define a posição absoluta */
+    top: 45%; /* Alinha o topo com 50% da altura do contêiner pai */
+    left: 50%; /* Alinha a esquerda com 50% da largura do contêiner pai */
+    transform: translate(-50%, -50%); /* Move o conteúdo para o centro do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+}
+/* Estilos para o efeito de máquina de escrever (typewriter effect) */
+.typewriter {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões */
+    border-right: .15em solid orange; /* Adiciona um cursor de máquina de escrever */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 1 auto; /* Centraliza o elemento horizontalmente */
+    letter-spacing: .0em; /* Define o espaçamento entre letras */
+    animation: typing 2.0s steps(30, end), blink-caret .75s step-end infinite; /* Define a animação de digitação */
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 } /* Começa com largura zero */
+    to { width: 100% } /* Termina com largura total */
 }
