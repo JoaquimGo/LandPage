@@ -12,9 +12,9 @@ body {
 }
 
 header {
-    background: #103002; /* fundo do site */
+    background: #35050e; /* fundo do header topo */
     color: #fff;
-    padding: 20px;
+    padding: 415px;
 }
 
 header h1 {
