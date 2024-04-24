@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Meias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venda de Meias</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Bem-vindo à nossa loja de meias! Oferecemos uma ampla variedade de estilos, cores e tamanhos para atender às suas necessidades.</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="produto">
+            <img src="meia_azul.jpeg" alt="Meia 1">
+            <h3>Meia Conforto</h3>
+            <p>R$ 15,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="meia_ver.jpeg" alt="Meia 2">
+            <h3>Meia Esportiva</h3>
+            <p>R$ 20,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para qualquer dúvida ou solicitação.</p>
+        <form action="submit.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Venda de Meias. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
